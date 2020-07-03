@@ -22,31 +22,38 @@
 		</div>
 	</div>
 		
-	<div class="icon">  
+	<div class="navbar-icon"> 
+	 
 		<div id="left">
 			<a href="#">Association</a>
+			
+        <div class="hamburger" onclick="toggleClass()">
+        	<h1>&#9776;</h1>
+        </div>
 		<ul>
-			<li ><a href="#">Home</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Residence</a></li>
-			<li><a href="#">Features</a></li>
-			<li><a href="#">Event</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">Gallery</a></li>	
+			<li ><a href="#" class="nav-link">Home</a></li>
+			<li><a href="#" class="nav-link">News</a></li>
+			<li><a href="#" class="nav-link">Residence</a></li>
+			<li><a href="#" class="nav-link">Features</a></li>
+			<li><a href="#" class="nav-link">Event</a></li>
+			<li><a href="#" class="nav-link">Contact</a></li>
+			<li><a href="#" class="nav-link">Gallery</a></li>	
 		</ul>
 		</div>
 
 		<a id="btn" href="#">GET INVOLVED</a>
 	</div>
 </div>	
+
+<script src="script.js"></script>
 <div class="wrapper">
 	<div class="container">
 		<h1> Learn about activities and concern of the Brookton neighborhood</h1>
-		<p> The purpose of this Brookton civic Association is to promote the civic welfare (to include but not limited to social, economic, enviroment, public, safety, quality of life and heritage issues/concerns) aaaa. </p>
+		<p> The purpose of this Brookton civic Association is to promote the civic welfare (to include but not limited to social, economic, enviroment, public, safety, quality of life and heritage issues/concerns). </p>
 		
 		<div class="btn2">
-			<a id="learn" href="#">learn more</a>
-			<a id="get" href="#"> get involved</a>
+			<a id="learn" href="#"><i class="far fa-lightbulb"></i>  learn more</a>
+			<a id="get" href="#"><i class="fas fa-allergies"></i>  get involved</a>
 		</div>
 		
 	</div>
@@ -138,12 +145,13 @@
 			<div class="col-left3 col-left_same"><img src="img/img8.jpg" alt=""></div>
 		</div>
 		<div class="col-right">
-			<h3>Community infor </h3>
+			<h1>Community infor </h1>
+			<hr>
 			<p>& Recent Happenings</p>
 			<div class="flex-container">
 				<div class="flex-left"><img src="img/img14.jpg" alt=""></div>
 				<div class="flex-right">
-					<h3>Summer restriction in our neighborhood</h3>
+					<a href="#">Summer restriction in our neighborhood</a>
 					<p>
 						<span>feb 21, 17</span> <small> by order of the fire marshal: the following restrictions shall apply to all open fire and the use of fireworks. The restrictions will be  in effect thorough from july 2016 and until.. </small> 
 					</p>
@@ -152,7 +160,7 @@
 			<div class="flex-container">
 				<div class="flex-left"><img src="img/img18.jpg" alt=""></div>
 				<div class="flex-right">
-					<h3> When and Where are Civic Association meeting held </h3>
+					<a href="#">When and Where are Civic Association meeting held</a>
 					<p>
 						<span>Jan 27, 17</span> <small> commision meetings are held in the forum of the city hall on Tuesday evening. This required legislative begins at 7p.m. More information concerning the city commission meeting can be found.. </small> 
 					</p>
@@ -161,7 +169,7 @@
 			<div class="flex-container">
 				<div class="flex-left"><img src="img/img17.jpg" alt=""></div>
 				<div class="flex-right">					
-					<h3> Youth football Camp  </h3>
+					<a href="#">Youth football Camp</a>
 					<p>
 						<span>Jun 24, 17</span> <small> Pitchers and Catchers(and Everyone Else) Report! WP Youth Baseball practice start thwe week of April 11. Games are Monday through Thursday evening start May 9th, the season runs </small> 
 					</p>
@@ -177,8 +185,9 @@
 		<p> in the Brookton districts</p>
 		<div class="boxes">
 			<div class="box">
-			<h2>beatification</h2>
-						<ul>
+			<i class="fas fa-air-freshener fa-3x fas-box" ></i>
+			<h2>beautification</h2>
+			<ul>
 				<li> Fort bunker hill park	</li>
 				<li> Matropolitan branch trail </li>
 				<li> Neighborhood cleanups </li>
@@ -187,6 +196,7 @@
 		</div>
 		
 		<div class="box">
+			<i class="fas fa-balance-scale fa-3x fas-box"></i>
 			<h2>advocacy</h2>
 			<ul>
 				<li> Development projects</li>
@@ -196,6 +206,7 @@
 			</ul>	
 		</div>
 		<div class="box">
+			<i class="fas fa-calendar-check fa-3x fas-box"></i>
 			<h2>social event</h2>
 			<ul>
 				<li> House and garden tour	</li>
@@ -314,12 +325,18 @@
 	<!-- family section -->
 	<div class="family">
 		<div class="family-left">
-			<i class="fab fa-facebook fa-3x"></i>
+ 
 			<div class="family-left1">
-				<p> Brookton ia amazing. We can't imagine raising our family any where else. We lve the friends we have made over the year living here. We look forward to many more memories in the years to come!</p>
+				<blockquote>
+					<p>
+					 Brookton ia amazing. We can't imagine raising our family any where else. We lve the friends we have made over the year living here. We look forward to many more memories in the years to come!
+					</p>
+				</blockquote>
+			</div>
+			<div class="joy1">
+				<img class="joy" src="img/joy.jpg" alt=""> Joyce happy Residence
 			</div>
 			
-			<i class="fab fa-twitter fa-3x"></i>
 		</div>
 		<div class="family-right">
 			<div class="family-right1">
@@ -397,9 +414,11 @@
 				<a href="#"><i class="fas fa-search"></i></a>	
 			</div>
 			
-		</form>
+			</form>
 		</div>
 		</div>
+		<p class="footer4">&copy 2017 Brookton Civic Association. All Rights Reserved</p>
+
 	</div>
 	<!-- end of main wrapper -->
 </body>
